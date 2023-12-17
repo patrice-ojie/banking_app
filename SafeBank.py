@@ -148,6 +148,7 @@ while True:
         if attempts == 0:
             break
         customer_options()
+        save_customer_data(user_ids, pin_numbers, balances)  # Save customer data for when the program is run again
         break
     else:
         print("UserID doesn't exist.")
